@@ -1,0 +1,108 @@
+body {
+    background-image: url("TIme.jpg");
+    background-size: cover;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    border-style: groove;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0078d0;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    outline: 0;
+    padding: 16px 21px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+
+button:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+button:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+  
+}
+button:active
+{
+    transform: scale(1.20);
+    
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 16px 48px;
+  }
+}
+
+
+#increment-btn {
+    background: #067735;
+    margin-right: 10px;
+}
+#dec-btn {
+    background: #ff0000;
+}
+#save-btn {
+    background: #298dffe0;
+}
+
+#save-el {
+    font-weight: bold;
+    border: 2px solid rgb(182, 247, 196);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    background: rgb(182, 247, 196);
+    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+}
+
+
+
